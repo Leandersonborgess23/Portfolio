@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 ```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -50,27 +51,39 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
+                    <a class="nav-link" href="#sobre">
+                        <i class="fa-solid fa-user"></i> Sobre
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#formacao">Formação</a>
+                    <a class="nav-link" href="#formacao">
+                        <i class="fa-solid fa-graduation-cap"></i> Formação
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                    <a class="nav-link" href="#habilidades">
+                        <i class="fa-solid fa-layer-group"></i> Habilidades
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#projetos">Projetos</a>
+                    <a class="nav-link" href="#projetos">
+                        <i class="fa-solid fa-diagram-project"></i> Projetos
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#certificacoes">Certificações</a>
+                    <a class="nav-link" href="#certificacoes">
+                        <i class="fa-solid fa-certificate"></i> Certificações
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
+                    <a class="nav-link" href="#contato">
+                        <i class="fa-solid fa-paper-plane"></i> Contato
+                    </a>
                 </li>
 
             </ul>
@@ -84,36 +97,75 @@
 
 <header class="hero">
 
-    <div class="container text-center">
+    <div class="container hero-content">
 
-        <img src="assets/img/profile/perfil.png"
-            class="img-fluid rounded-circle profile-img">
+        <div class="hero-left">
 
-        <h1 class="mt-4">
-            Leanderson Borges
-        </h1>
+            <h1>Leanderson Borges</h1>
 
-        <h3 id="typing-text"></h3>
+            <h2 id="typing-text"></h2>
 
-        <p>
-            Automação • Python • IoT • Ciência e Tecnologia
-        </p>
+            <p>
+                Desenvolvedor Full Stack • Python • Automação • IoT
+            </p>
 
-        <a href="#projetos" class="btn btn-primary btn-lg">
-            Ver Projetos
-        </a>
+            <div class="hero-actions">
 
-        <a href="assets/documents/curriculo.pdf"
-            target="_blank"
-            class="btn btn-outline-light btn-lg">
+                <a href="#projetos" class="btn btn-primary">
+                    <i class="fa-solid fa-folder-open"></i> Ver Projetos
+                </a>
 
-            Download CV
+                <a href="assets/documents/curriculo.pdf"
+                target="_blank"
+                class="btn btn-outline-light">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
 
-        </a>
+            </div>
+
+        </div>
 
     </div>
 
 </header>
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h3>10+</h3>
+                <p>Projetos</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>3+</h3>
+                <p>Tecnologias principais</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>2</h3>
+                <p>Anos de experiência</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-user-gear"></i>
+                <h3>Full Stack</h3>
+                <p>Perfil</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 <!-- SOBRE -->
@@ -122,18 +174,17 @@
 
     <div class="container">
 
-        <h2 class="text-center mb-5">Sobre Mim</h2>
+        <h2 class="text-center mb-5">
+            <i class="fa-solid fa-user"></i> Sobre Mim
+        </h2>
 
-        <p class="lead text-center">
+        <p class="lead">
 
-            Sou estudante de Bacharelado em Ciência e Tecnologia na UERN
-            e Técnico em Informática pelo IFRN.
+        Sou estudante de Bacharelado em Ciência e Tecnologia pela UERN e Técnico em Informática pelo IFRN, com foco em desenvolvimento de software, automação e sistemas inteligentes.
 
-            Possuo experiência em desenvolvimento Full Stack, automação,
-            Python, bancos de dados, redes e eletrônica.
+        Atuo no desenvolvimento de aplicações Full Stack utilizando Python, Flask, MySQL e tecnologias web modernas, além de possuir experiência prática com redes, eletrônica e sistemas embarcados.
 
-            Meu objetivo é desenvolver soluções inovadoras que integrem
-            software, automação e inteligência artificial.
+        Tenho interesse especial em arquitetura de software, automação de processos e integração entre hardware e software, buscando sempre transformar problemas reais em soluções funcionais e escaláveis.
 
         </p>
 
@@ -148,7 +199,9 @@
 
     <div class="container">
 
-        <h2 class="text-center mb-5">Formação Acadêmica</h2>
+        <h2 class="text-center mb-5">
+            <i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica
+        </h2>
 
         <div class="card mb-3">
             <div class="card-body">
@@ -177,7 +230,9 @@
 
     <div class="container">
 
-        <h2 class="text-center mb-5">Habilidades</h2>
+        <h2 class="text-center mb-5">
+            <i class="fa-solid fa-layer-group"></i> Habilidades
+        </h2>
 
         <div class="row g-4">
 
@@ -250,7 +305,9 @@
 
     <div class="container">
 
-        <h2 class="text-center mb-5">Projetos</h2>
+        <h2 class="text-center mb-5">
+            <i class="fa-solid fa-diagram-project"></i> Projetos
+        </h2>
 
         <!-- PROJETO EM DESTAQUE -->
         <div class="featured-project mb-5">
@@ -431,7 +488,9 @@
 
     <div class="container">
 
-        <h2 class="text-center mb-5">Certificações</h2>
+        <h2 class="text-center mb-5">
+            <i class="fa-solid fa-certificate"></i> Certificações
+        </h2>
 
         <div class="row gy-4 justify-content-center">
 

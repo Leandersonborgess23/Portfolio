@@ -75,55 +75,119 @@ body{
 ========================================== */
 
 .hero{
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px; /* espaço real do navbar */
+
     display: flex;
-    align-items: flex-start; /* antes era center */
-    justify-content: center;
+    align-items: center;
 
-    text-align: center;
+    background: 
+        linear-gradient(90deg, rgba(15,23,42,0.95) 45%, rgba(15,23,42,0.2)),
+        url("../img/profile/perfil.png");
 
-    background: linear-gradient(135deg, var(--dark), #1e293b);
+    background-repeat: no-repeat;
+    background-position: right bottom; /* 🔥 importante */
+    background-size: contain;
+
     color: white;
 
-    padding-top: 80px;  /* controla a altura superior */
-    padding-bottom: 60px;
+    padding: 0 5%;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hero-left{
+    text-align: left;
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .hero h1{
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: 700;
+    letter-spacing: -1px;
 }
 
-.hero h3{
-    margin-top: 10px;
+.hero h2{
+    font-size: 1.6rem;
     font-weight: 400;
+    color: #38bdf8;
+    margin-top: 10px;
 }
 
 .hero p{
-    margin: 25px 0;
-    font-size: 1.1rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+.hero-actions{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
 }
 
 .profile-img{
-    width: 260px;
-    height: auto;
-
-    max-width: 100%;
-
+    width: 280px;
+    height: 280px;
     object-fit: contain;
-
-    border-radius: 15px;
-
+    border-radius: 20px;
     border: 5px solid rgba(255,255,255,0.15);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-
-    display: inline-block;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    display: block;
+    margin: 0 auto;
+    transition: 0.4s ease;
 }
 
 .profile-img:hover{
     transform: scale(1.03);
 }
 
+/* ==========================================
+   STATS
+========================================== */
+
+.stats{
+    padding: 80px 0;
+    background: #0b1220;
+}
+
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card{
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+}
+
+.stat-card:hover{
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+}
+
+.stat-card h3{
+    font-size: 2rem;
+    color: #38bdf8;
+}
 
 /* ==========================================
    BOTÕES
@@ -154,7 +218,7 @@ body{
 ========================================== */
 
 section{
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 section h2{
@@ -180,8 +244,10 @@ section h2::after{
 
 #sobre p{
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
     line-height: 1.9;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 
@@ -227,17 +293,26 @@ section h2::after{
 ========================================== */
 
 .project-card{
-    background: #ffffff;
-    border-radius: 15px;
+    background: white;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.4s;
 }
 
 .project-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.project-card img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-card h5{
+    font-weight: 600;
 }
 
 .featured-project{
@@ -276,13 +351,6 @@ section h2::after{
     border-radius: 15px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     transition: 0.3s;
-}
-
-.project-card img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
 }
 
 .project-card .p-3{
@@ -377,4 +445,19 @@ footer{
 .fade-up.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+
+@media (max-width: 768px){
+
+    .hero-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-actions{
+        justify-content: center;
+    }
+
 }
