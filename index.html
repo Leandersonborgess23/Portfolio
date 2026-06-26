@@ -246,43 +246,54 @@
 
 <!-- PROJETOS -->
 
-<section id="projetos" class="bg-light">
+<section id="projetos" class="py-5">
 
-```
-<div class="container">
+    <div class="container">
 
-    <h2 class="text-center">
-        Projetos
-    </h2>
+        <h2 class="text-center mb-5">Projetos</h2>
 
-    <div class="row gy-4">
+        <!-- PROJETO EM DESTAQUE -->
+        <div class="featured-project mb-5">
 
-        <!-- JARVIS -->
+            <div class="row align-items-center">
 
-        <div class="col-md-4">
+                <div class="col-md-6">
 
-            <div class="card h-100">
+                    <img src="assets/img/projects/jarvis.png"
+                        class="img-fluid rounded-4 shadow">
 
-                <img src="assets/img/projects/jarvis.png"
-                    class="card-img-top">
+                </div>
 
-                <div class="card-body">
+                <div class="col-md-6">
 
-                    <h5 class="card-title">
-                        JARVIS
-                    </h5>
+                    <h3>JARVIS</h3>
 
-                    <p class="card-text">
-
-                        Assistente virtual desenvolvido em Python
-                        com comandos de voz e automações.
-
+                    <p class="lead">
+                        Assistente virtual em Python com comandos de voz,
+                        automações e integração com sistemas locais.
                     </p>
+
+                    <!-- BADGES -->
+                    <div class="mb-3">
+
+                        <span class="badge bg-primary me-1">Python</span>
+                        <span class="badge bg-dark me-1">Automação</span>
+                        <span class="badge bg-info text-dark me-1">IA</span>
+
+                    </div>
 
                     <a href="pages/projeto-jarvis.html"
-                        class="btn btn-primary">
+                       class="btn btn-primary me-2">
 
-                        Saiba Mais
+                        Detalhes
+
+                    </a>
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       class="btn btn-outline-dark">
+
+                        GitHub
 
                     </a>
 
@@ -293,70 +304,115 @@
         </div>
 
 
-        <!-- ALA -->
+        <!-- GRID DE PROJETOS -->
+        <div class="row g-4">
 
-        <div class="col-md-4">
+            <!-- ALA -->
+            <div class="col-md-4">
 
-            <div class="card h-100">
+                <div class="project-card">
 
-                <img src="assets/img/projects/ala.png"
-                    class="card-img-top">
+                    <img src="assets/img/projects/ala.png"
+                        class="img-fluid">
 
-                <div class="card-body">
+                    <div class="p-3">
 
-                    <h5>
-                        Projeto ALA
-                    </h5>
+                        <h5>Projeto ALA</h5>
 
-                    <p>
+                        <p class="small">
+                            Sistema de automação das luzes do auditório.
+                        </p>
 
-                        Sistema inteligente para automação
-                        das luzes do auditório.
+                        <div class="mb-2">
 
-                    </p>
+                            <span class="badge bg-secondary">IoT</span>
+                            <span class="badge bg-secondary">Arduino</span>
 
-                    <a href="pages/projeto-ala.html"
-                        class="btn btn-primary">
+                        </div>
 
-                        Saiba Mais
+                        <a href="pages/projeto-ala.html"
+                           class="btn btn-sm btn-outline-primary w-100">
 
-                    </a>
+                            Ver Projeto
+
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+
+            <!-- FLASK -->
+            <div class="col-md-4">
+
+                <div class="project-card">
+
+                    <img src="assets/img/projects/flask-system.png"
+                        class="img-fluid">
+
+                    <div class="p-3">
+
+                        <h5>Sistema Flask</h5>
+
+                        <p class="small">
+                            Sistema web fullstack com Flask e MySQL.
+                        </p>
+
+                        <div class="mb-2">
+
+                            <span class="badge bg-secondary">Flask</span>
+                            <span class="badge bg-secondary">MySQL</span>
+
+                        </div>
+
+                        <a href="pages/projeto-flask.html"
+                           class="btn btn-sm btn-outline-primary w-100">
+
+                            Ver Projeto
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-        <!-- FLASK -->
+            <!-- PORTFOLIO -->
+            <div class="col-md-4">
 
-        <div class="col-md-4">
+                <div class="project-card">
 
-            <div class="card h-100">
+                    <img src="assets/img/projects/portfolio.png"
+                        class="img-fluid">
 
-                <img src="assets/img/projects/flask-system.png"
-                    class="card-img-top">
+                    <div class="p-3">
 
-                <div class="card-body">
+                        <h5>Portfólio</h5>
 
-                    <h5>
-                        Sistema Web Flask
-                    </h5>
+                        <p class="small">
+                            Site pessoal desenvolvido com Bootstrap.
+                        </p>
 
-                    <p>
+                        <div class="mb-2">
 
-                        Aplicação Full Stack utilizando
-                        Flask, MySQL e Bootstrap.
+                            <span class="badge bg-secondary">HTML</span>
+                            <span class="badge bg-secondary">CSS</span>
+                            <span class="badge bg-secondary">JS</span>
 
-                    </p>
+                        </div>
 
-                    <a href="pages/projeto-flask.html"
-                        class="btn btn-primary">
+                        <a href="#"
+                           class="btn btn-sm btn-outline-primary w-100">
 
-                        Saiba Mais
+                            Ver Projeto
 
-                    </a>
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -365,9 +421,6 @@
         </div>
 
     </div>
-
-</div>
-```
 
 </section>
 
